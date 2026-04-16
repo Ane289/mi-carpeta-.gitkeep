@@ -1,15 +1,5 @@
-
-
-
-
-
-
-
-
-
-
 header {
-    background-color: #333;
+    background-color: #6B1A34;
     color: white;
     padding: 10px;
     display: flex;
@@ -22,10 +12,11 @@ header h1 {
 }
 
 nav ul {
-    list-style: none;    
+    list-style: none;    /* quita los puntos */
+    margin: 0;
     padding: 0;
-    display: flex;       
-    gap: 40px;
+    display: flex;       /* pone los links en horizontal */
+    gap: 20px;
 }
 
 nav ul li a {
