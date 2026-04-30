@@ -10,7 +10,8 @@
 </head>
 <body>
     
-    <form action="login.php" method="post">
+    
+<form onsubmit="iniciarSesion(event)">
         <h1> Inicio de Sesion </h1>
         <label for="username">Usuario:</label>
         <input type="text" id="username" name="username" required><br><br>
@@ -19,6 +20,22 @@
         <input type="password" id="password" name="password" required><br><br>
         
         <input type="submit" value="Iniciar Sesión">
+
+        <script>
+  function iniciarSesion(event) {
+    event.preventDefault();
+    
+    const usuario = document.getElementById("username").value;
+    const contrasena = document.getElementById("password").value;
+
+    // Puedes cambiar estos valores por los que quieras
+    if (usuario === "admin" && contrasena === "1234") {
+      window.location.href = "index.html";
+    } else {
+      alert("Usuario o contraseña incorrectos");
+    }
+  }
+</script>
 
 </body>
 </html>
